@@ -11,3 +11,4 @@ where we use :-
 5- Redis for caching
 6- basic rate limiting on login url(it has to be top level on api gateway level for better DOS handling)
 7- Kafka for handling different service async communication 
+8- Pino for proper logging of request
