@@ -1,8 +1,6 @@
 import redis from "../../config/redis.js";
-import { logger } from "../../utils/logger.js";
 import { Task } from "./task.model.js";
 
-zzzzzzzzzazzzz
 export const createTask = async (data, userId) => {
   const task = await Task.create({...data,  UserId: userId});
    const keys = await redis.keys(`Task:${userId}:*`);
